@@ -1,21 +1,21 @@
 # require 'pry'
 # class Pokemon
 #   attr_accessor :id, :name, :type, :db
-# 
-# 
+#
+#
 #   def initialize(args)
 #     @name = args[:name]
 #     @type = args[:type]
 #     @db = args[:db]
 #     @id = args[:id]
 #   end
-# 
+#
 #   def self.save(name, type, db)
 #       sql = "INSERT INTO pokemon (name, type) VALUES (?, ?)"
 #       db.execute(sql, name, type)
 #   end
-# 
-# 
+#
+#
 #   def self.find(id, db)
 #     sql = "SELECT * FROM pokemon WHERE id = ?"
 #     result = db.execute(sql, id).flatten #flatten returns array w/o nested arrays.
